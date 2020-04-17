@@ -52,7 +52,7 @@ id_dump = []
 def filterdiv(divs): 
     global id_dump
     for div in divs:
-        id_ = div.strip("col-xs-7 enter-raffle-btns")
+        id_ = div.strip("raffle-box")
         id_dump.append(id_)
 
 html = driver.execute_script("return document.getElementsByTagName('html')[0].innerHTML")
